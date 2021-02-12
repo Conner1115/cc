@@ -9,6 +9,7 @@
   --dash: rgb(220,220,220);
   --rale: 'Raleway', sans-serif;
   --thk: rgba(0,0,0,0.5);
+  --colt: rgb(0,0,0)
 }
 body, html {
   margin:0;
@@ -35,7 +36,7 @@ p{
 }
 a{
   text-decoration:none;
-  color:black;
+  color:var(--colt);
 }
 button, input, textArea{
   outline:none;
@@ -70,7 +71,79 @@ footer > span {
   height: 50px;
   background: var(--col3);
 }
+a:hover, [type="submit"]:hover, button:hover{
+  cursor:pointer;
+}
 
+.form-control > input:focus,
+.form-control > textArea:focus {
+  transition: 0.25s;
+  box-shadow: inset 0 0 2px rgba(0,0,0,0.25), 0 0 0 1px rgba(0, 100, 200, 0.5),
+    0 0 0 4px rgba(0, 150, 255, 0.5);
+}
+.form-control > input {
+  margin-left: 10%;
+  border: none;
+  box-shadow: inset 0 0 2px rgba(0,0,0,0.25);
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+  width: 80%;
+  color: var(--colt);
+  background: var(--col1);
+}
+.form-control > textArea {
+  margin-left: 10%;
+  border: none;
+  box-shadow: inset 0 0 2px rgba(0,0,0,0.25);
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+  width: 80%;
+  color: var(--colt);
+  background: var(--col1);
+  resize: vertical;
+}
+.form-submit > input {
+  margin-left: 10%;
+  margin-bottom: 10px;
+  width: 80%;
+  background: rgb(0, 175, 50);
+  border: solid rgb(0, 150, 0) 1px;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.form-label {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: var(--colt);
+  text-align: justify;
+}
+.log-form{
+  position: absolute;
+  margin: 0;
+  width: 250px;
+  z-index: 2;
+  background: white;
+  border: solid rgb(200, 200, 200) 1px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px var(--shad-col);
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  color: black;
+  margin-left: -125px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-family:var(--mont);
+  padding: 20px 0;
+}
 .hl{
   color:var(--colm);
 }
@@ -94,7 +167,7 @@ footer > span {
   min-height:100%;
 }
 .nav-link{
-  color:black;
+  color:var(--colt);
   font-family:var(--rale);
   text-decoration:none;
   display:inline-block;
@@ -107,7 +180,7 @@ footer > span {
 .layer{
   width:40px;
   height:5px;
-  background:black;
+  background:var(--colt);
   margin:8px 5px;
 }
 .nav-out{
