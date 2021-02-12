@@ -319,6 +319,16 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   transform:translatex(-50%);
   margin:20px 0;
 }
+#error{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  padding:10px;
+  color:white;
+  font-family:var(--mont);
+  background:rgb(225,50,0)
+}
 
 @media(max-width:700px){
   .nav-link{
