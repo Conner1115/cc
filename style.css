@@ -30,6 +30,7 @@ p{
   text-align:justify;
   font-family:var(--mont);
   font-size:15px;
+  margin:20px 0;
 }
 a{
   text-decoration:none;
@@ -69,6 +70,9 @@ footer > span {
   background: var(--col3);
 }
 
+.hl{
+  color:var(--colm);
+}
 .parallax-cover{
   background:var(--thk);
   display:block;
