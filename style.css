@@ -30,7 +30,10 @@ p{
   text-align:justify;
   font-family:var(--mont);
   font-size:15px;
-  margin:20px 0;
+  margin-top:20px;
+  margin-bottom:20px;
+  margin:auto;
+  max-width:700px;
 }
 a{
   text-decoration:none;
