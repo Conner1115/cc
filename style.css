@@ -236,15 +236,28 @@ button:hover {
   width:80%;
   margin:auto;
   background:white;
-  box-shadow: 0 0 5px 0 rgba(0,0,0,0.25);
+  box-shadow: 0 -3px 2px 0 rgba(0,0,0,0.1);
   padding:10px;
+  padding-right:130px;
   font-size:25px;
   font-family:var(--poi);
   max-width:800px;
   overflow:hidden;
   text-overflow:ellipsis;
   white-space: nowrap;
+  margin-top:20px;
 }
+.project-stats{
+  margin: auto;
+  width:80%;
+  text-align:center;
+  max-width:700px;
+  background:white;
+  box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1);
+  margin-bottom:20px;
+  font-family:var(--mont);
+}
+
 
 #buttons-menu {
   font-size: 40px;
