@@ -47,6 +47,7 @@ button,
 input,
 textArea {
   outline: none;
+  font-family:var(--mont);
 }
 footer {
   width: 100%;
@@ -262,13 +263,66 @@ button:hover {
   border-radius:5px;
   border:none;
   padding:10px;
+  max-height:40px;
   font-family:var(--mont);
 }
-.opt-b:hover{
+.opt-b-2 > input{
+  background:var(--colm);
+  color:white;
+  border-radius:5px;
+  border:none;
+  padding:10px;
+  font-size:15px;
+  font-family:var(--mont);
+  max-height:40px;
+}
+.opt-b:hover, .opt-b-2 > input:hover{
   cursor:pointer;
   background:var(--colmd);
 }
+.opt-b, .opt-b-2 > input, .op-b{
+  text-align:center;
+}
+.comment{
+  width:80%;
+  margin:auto;
+  padding:10px;
+  border-radius:5px;
+  box-shadow:0 0 2px 0 rgba(0,0,0,0.25);
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.comment > span{
+  font-style: italic;
+  font-family:var(--mont);
+}
+.comment > span > .rep{
+  text-align:right;
+  font-family:var(--mont);
+}
 
+#like-button > input{
+  width:150px;
+  position:relative;
+  left:calc(50% - 75px);
+  margin-bottom:20px;
+}
+#comment-form > div{
+  max-width:600px;
+  margin:auto;
+}
+#comment-form{
+  position:absolute;
+  left:50%;
+  width:90%;
+  margin-left:-45%;
+  top:calc(50px + 450px);
+  background:white;
+  padding:20px 100px;
+}
+#hidden-checkbox, #hidden-checkbox > input{
+  display:none;
+}
 #buttons-menu {
   font-size: 40px;
   width: 100%;
@@ -413,7 +467,7 @@ button:hover {
 }
 #code-wrapper{
   position:absolute;
-  top:5%;
+  top:50px;
   left:5%;
   width:90%;
   height:400px;
@@ -422,7 +476,7 @@ button:hover {
 #option-bar{
   border:solid var(--dash) 1px;
   position:absolute;
-  top:calc(5% + 400px);
+  top:calc(50px + 400px);
   left:5%;
   width:90%;
   height:50px;
@@ -457,6 +511,7 @@ button:hover {
 #close-saver:hover{
   cursor:pointer;
 }
+
 
 @media (max-width: 700px) {
   .nav-link {
@@ -536,6 +591,9 @@ button:hover {
     height: auto;
     text-align: center;
   }
+  #comment-form{
+    padding:20px 50px;
+  }
 }
 @media (max-width: 350px) {
   .feature > i {
@@ -555,5 +613,12 @@ button:hover {
   }
   table {
     font-size: 12px;
+  }
+  #comment-form{
+    padding:20px 0px;
+  }
+  .opt-b, .opt-b-2 > input, .op-b{
+    font-size:12px !important;
+    padding:5px;
   }
 }
