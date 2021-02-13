@@ -422,7 +422,7 @@ button:hover {
 #option-bar{
   border:solid var(--dash) 1px;
   position:absolute;
-  top:calc(95% - 7px);
+  top:calc(5% + 400px);
   left:5%;
   width:90%;
   height:50px;
