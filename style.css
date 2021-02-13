@@ -489,7 +489,7 @@ button:hover {
   font-size:15px;
   margin:5px;
 }
-#create-popup{
+#create-popup, #delete-popup{
   background:white;
   font-family:var(--mont);
   width:250px;
