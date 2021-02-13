@@ -448,11 +448,14 @@ button:hover {
   z-index:15;
   box-shadow: 0 0 5px 0 rgba(0,0,0,0.25);
   border-radius:5px;
-  padding: 20px 0;
+  padding-bottom: 20px;
   display:none;
 }
 #code-area{
   display:none;
+}
+#close-saver:hover{
+  cursor:pointer;
 }
 
 @media (max-width: 700px) {
