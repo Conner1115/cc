@@ -318,7 +318,18 @@ button:hover {
   text-align:right;
   font-family:var(--mont);
 }
-
+.notif{
+  margin:auto;
+  width:80%;
+  max-width:800px;
+  background:white;
+  margin-top:20px;
+  margin-bottom:20px;
+  padding:10px;
+  font-size:20px;
+  border-radius:10px;
+  border:solid var(--dash) 1px;
+}
 .reply{
   max-width:600px;
   background:var(--col1);
