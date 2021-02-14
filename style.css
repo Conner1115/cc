@@ -85,6 +85,22 @@ button:hover {
   cursor: pointer;
 }
 
+.f-sec{
+  width:80%;
+  margin:auto;
+  max-width:700px;
+  background:var(--col1);
+  border:solid var(--dash) 1px;
+  border-radius:15px;
+  margin-top:10px;
+  margin-bottom:20px;
+  padding:10px;
+  font-family:var(--mont);
+}
+.sec-danger{
+  background:rgb(255,225,225);
+  border-color:rgb(255,100,100);
+}
 .form-control > input:focus,
 .form-control > textArea:focus {
   transition: 0.25s;
