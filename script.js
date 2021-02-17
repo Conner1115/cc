@@ -36,3 +36,6 @@ function hideNav(){
   $("#nav-links").classList.add("nav-out");
   $("#nav-links").classList.remove("nav-in");
 }
+window.onbeforeunload = function(){ return 'Testing...' }
+  var unloadListener = function(){ return 'Testing...' };
+  window.addEventListener('beforeunload', unloadListener);
